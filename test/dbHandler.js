@@ -22,9 +22,10 @@ module.exports.connect = async () => {
 
   await mongoose.connect(uri, {
     dbName: 'testDB',
+    useNewUrlParser: true
   });
 
-//   await this.imporDefaultData();
+  await this.imporDefaultData();
 };
 
 module.exports.closeDatabase = async () => {
