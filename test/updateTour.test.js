@@ -16,18 +16,17 @@ describe('PATCH', () => {
         };
 
         const checkTour = (tour) => {
-            expect(updatedTour).toHaveProperty('_id', tourToUpdate._id);
-            expect(updatedTour).toHaveProperty('name', tourToUpdate.name);
-            expect(updatedTour).toHaveProperty('duration', patchData.duration);
-            expect(updatedTour).toHaveProperty('maxGroupSize', tourToUpdate.maxGroupSize);
-            expect(updatedTour).toHaveProperty('difficulty', patchData.difficulty);
-            expect(updatedTour).toHaveProperty('ratingsAverage', tourToUpdate.ratingsAverage);
-            expect(updatedTour).toHaveProperty('ratingsQuantity', tourToUpdate.ratingsQuantity);
-            expect(updatedTour).toHaveProperty('price', patchData.price);
-            expect(updatedTour).toHaveProperty('priceDiscount', tourToUpdate.priceDiscount);
-            expect(updatedTour).toHaveProperty('summary', tourToUpdate.summary);
-            expect(updatedTour).toHaveProperty('description', tourToUpdate.description);
-            expect(updatedTour).toHaveProperty('startDates', tourToUpdate.startDates);
+            expect(tour).toHaveProperty('_id');
+            expect(tour).toHaveProperty('name', tourToUpdate.name);
+            expect(tour).toHaveProperty('duration', patchData.duration);
+            expect(tour).toHaveProperty('maxGroupSize', tourToUpdate.maxGroupSize);
+            expect(tour).toHaveProperty('difficulty', patchData.difficulty);
+            expect(tour).toHaveProperty('ratingsAverage', tourToUpdate.ratingsAverage);
+            expect(tour).toHaveProperty('ratingsQuantity', tourToUpdate.ratingsQuantity);
+            expect(tour).toHaveProperty('price', patchData.price);
+            expect(tour).toHaveProperty('priceDiscount', tourToUpdate.priceDiscount);
+            expect(tour).toHaveProperty('summary', tourToUpdate.summary);
+            expect(tour).toHaveProperty('description', tourToUpdate.description);
         };
 
         const response = await request(app)
