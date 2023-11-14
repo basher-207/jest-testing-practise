@@ -130,7 +130,7 @@ describe('GET', () => {
         });
 
         const response = await request(app)
-            .get('/api/v1/tours?limit=4,InvalidField=test')
+            .get('/api/v1/tours')
             .expect('Content-Type', /json/)
             .expect(404)
 
