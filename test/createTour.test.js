@@ -2,7 +2,6 @@ const request = require('supertest');
 const Tour = require("../models/tourModel.js");
 const app = require('../app.js');
 const dbHandler = require('./dbHandler.js');
-const initialTestData = require('./tours-test-data.json');
 
 describe('POST', () => {
     beforeAll(async () => await dbHandler.connect());
@@ -46,7 +45,7 @@ describe('POST', () => {
         checkTour(response.body.data.tour, tourInputData);
     });
 
-    it('/api/v1/tours returns status "fail" and code 400', async () => {
+    it('/api/v1/tours returns status "fail" and code 400 on invalid data sending', async () => {
         const response = await request(app)
         .post('/api/v1/tours')
         .send({
