@@ -121,4 +121,22 @@ describe('GET', () => {
         expect(response.body.results).toBe(expectedQuantity);
         expect(response.body.data.tours.length).toBe(expectedQuantity);
     });
+
+    it('/api/v1/tours returns expected structure with status: "fail" and 404 code on error', async () => {
+        const Tour = require('../models/tourModel.js');
+        // Tour.find() will reject with error
+        Tour.find = jest.fn().mockImplementation(() => { 
+            return new Error('Reject with this error')
+        });
+
+        const response = await request(app)
+            .get('/api/v1/tours?limit=4,InvalidField=test')
+            .expect('Content-Type', /json/)
+            .expect(404)
+
+        expect(response.body.status).toBe('fail');
+        expect(response.body).toHaveProperty('message');
+
+        jest.clearAllMocks();
+    });
 });
