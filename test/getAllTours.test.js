@@ -1,7 +1,7 @@
 const request = require('supertest');
 const dbHandler = require('./dbHandler.js');
-const app = require('../app.js');
 const initialTestData = require('./tours-test-data.json');
+const app = require('../app.js');
 
 describe('GET', () => {
     beforeAll(async () => await dbHandler.connect());
