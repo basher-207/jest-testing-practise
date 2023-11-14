@@ -1,6 +1,5 @@
 const request = require('supertest');
 const dbHandler = require('./dbHandler.js');
-const Tour = require('../models/tourModel.js');
 const app = require('../app.js');
 const initialTestData = require('./tours-test-data.json');
 
