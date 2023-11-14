@@ -7,8 +7,8 @@
     "start": "nodemon server.js",
     "start:prod": "NODE_ENV=production nodemon server.js",
     "debug": "ndb server.js",
-    "test": "jest --runInBand ",
-    "coverage": "jest --coverage "
+    "test": "node_modules/.bin/jest --runInBand ",
+    "coverage": "node_modules/.bin/jest --coverage "
   },
   "author": "Jonas Schmedtmann",
   "license": "ISC",

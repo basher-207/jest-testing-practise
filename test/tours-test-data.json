@@ -1,0 +1,68 @@
+[
+    {
+      "name": "Mountain Adventure",
+      "duration": 7,
+      "maxGroupSize": 15,
+      "difficulty": "difficult",
+      "ratingsAverage": 4.8,
+      "ratingsQuantity": 25,
+      "price": 1200,
+      "priceDiscount": 1100,
+      "summary": "Experience the thrill of a lifetime with our challenging mountain adventure tour.",
+      "description": "Join us for an unforgettable journey to conquer the highest peaks and witness breathtaking landscapes.",
+      "startDates": ["2023-12-01", "2024-03-15", "2024-07-05"]
+    },
+    {
+      "name": "Cultural Exploration",
+      "duration": 10,
+      "maxGroupSize": 20,
+      "difficulty": "medium",
+      "ratingsAverage": 4.5,
+      "ratingsQuantity": 30,
+      "price": 1500,
+      "priceDiscount": 1400,
+      "summary": "Immerse yourself in the rich cultural heritage of diverse civilizations on this exploration tour.",
+      "description": "Discover the wonders of ancient history, art, and traditions as we travel through fascinating cities.",
+      "startDates": ["2023-11-25", "2024-05-10", "2024-09-20"]
+    },
+    {
+      "name": "Beach Paradise",
+      "duration": 5,
+      "maxGroupSize": 10,
+      "difficulty": "easy",
+      "ratingsAverage": 4.2,
+      "ratingsQuantity": 15,
+      "price": 800,
+      "priceDiscount": 750,
+      "summary": "Relax and unwind on pristine beaches with our rejuvenating beach paradise tour.",
+      "description": "Escape the hustle and bustle as we take you to tropical paradises with sun, sand, and crystal-clear waters.",
+      "startDates": ["2024-01-10", "2024-04-22", "2024-08-08"]
+    },
+    {
+      "name": "Wildlife Safari",
+      "duration": 8,
+      "maxGroupSize": 12,
+      "difficulty": "medium",
+      "ratingsAverage": 4.7,
+      "ratingsQuantity": 20,
+      "price": 1800,
+      "priceDiscount": 1700,
+      "summary": "Embark on an exciting wildlife safari to witness majestic creatures in their natural habitats.",
+      "description": "Experience the thrill of encountering lions, elephants, and other fascinating wildlife species.",
+      "startDates": ["2023-12-15", "2024-06-05", "2024-10-18"]
+    },
+    {
+      "name": "Historical Expedition",
+      "duration": 12,
+      "maxGroupSize": 25,
+      "difficulty": "difficult",
+      "ratingsAverage": 4.9,
+      "ratingsQuantity": 35,
+      "price": 2200,
+      "priceDiscount": 2100,
+      "summary": "Journey through time with our historical expedition, exploring ancient civilizations and landmarks.",
+      "description": "Uncover the secrets of the past as we visit historical sites and learn about the stories that shaped our world.",
+      "startDates": ["2023-11-30", "2024-04-10", "2024-09-30"]
+    }
+  ]
+  
